@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+</head>
+<body>
+    <header>
+        <h1>Food Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="admin.html">Panel de Administración</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <aside>
+        <h2>Categorías</h2>
+        <ul>
+            <li><a href="#">Todas</a></li>
+            <li><a href="#">Hamburguesas</a></li>
+            <li><a href="#">Pizzas</a></li>
+            <li><a href="#">Papas Fritas</a></li>
+            <li><a href="#">Bebidas</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <form>
+            <label for="buscarProducto">Buscar productos</label>
+            <input id="buscarProducto" type="text" placeholder="Ej: Hamburguesa"/>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <section>
+            <h2>Productos destacados</h2>
+
+            <!-- Producto 1 -->
+            <article>
+                <img src="https://api-middleware-mcd.mcdonaldscupones.com/media/image/product$kQX3BMhy/200/200/original?country=ar"
+                width="200px"/>
+                <h3>Hamburguesa triple</h3>
+                <p>Hamburguesa triple carne con cheddar y bacon.</p>
+                <p>Precio: <strong>$25000.00</strong></p>
+                <button type="button">Ver Detalles</button>
+                <button type="button">Agregar al Carrito</button>
+            </article>
+
+            <!-- Producto 2 -->
+            <article>
+                <img src="https://media.istockphoto.com/id/905492462/es/foto/pizza-margarita-con-queso-mozzarella-albahaca-y-tomate-plantilla-para-su-dise%C3%B1o-y-el-men%C3%BA-del.jpg?s=612x612&w=0&k=20&c=EzqqfeA5rZ87NktFgIo6vgNWfZlO037uP4JtvVx3HhY="
+                width="200px"/>
+                <h3>Pizza Muzzarella</h3>
+                <p>Pizza con salsa de tomate casera y muzzarella abundante.</p>
+                <p>Precio: <strong>$18000.00</strong></p>
+                <button type="button">Ver Detalles</button>
+                <button type="button">Agregar al Carrito</button>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2026 Food Store. Todos los derechos reservados</p>
+        <p>Contacto: info@foodstore.com</p>
+    </footer>
+
+</body>
+</html>

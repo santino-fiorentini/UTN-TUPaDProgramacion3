@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Online - Planes</title>
+</head>
+
+<body>
+
+    <!-- Actividad 2: Semántica -->
+    <header>
+        <h1>Cine Online</h1>
+
+        <nav>
+            <a href="#planes">Planes</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="planes">
+
+            <h2>Nuestros planes</h2>
+
+            <!-- Actividad 2: Tabla -->
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">Plan</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Calidad</th>
+                        <th scope="col">Dispositivos</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th scope="row">Básico</th>
+                        <td>$5.000</td>
+                        <td>HD</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Estándar</th>
+                        <td>$8.500</td>
+                        <td>Full HD</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Premium</th>
+                        <td>$12.000</td>
+                        <td>4K</td>
+                        <td>4</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section id="contacto">
+
+            <h2>Contactanos</h2>
+
+            <!-- Actividad 1: Formulario -->
+            <form action="#" method="get">
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="motivo">Motivo de contacto:</label><br>
+                <select id="motivo" name="motivo">
+                    <option>Elegir un plan</option>
+                    <option>Modificar mi suscripción</option>
+                    <option>Reportar un problema</option>
+                </select>
+
+                <br><br>
+
+                <fieldset>
+
+                    <legend>Tipo de consulta</legend>
+
+                    <input type="radio" id="general" name="tipo" value="general">
+                    <label for="general">Consulta general</label><br>
+
+                    <input type="radio" id="planes" name="tipo" value="planes">
+                    <label for="planes">Información sobre planes</label><br>
+
+                    <input type="radio" id="soporte" name="tipo" value="soporte">
+                    <label for="soporte">Soporte técnico</label>
+
+                </fieldset>
+
+                <br>
+
+                <label for="mensaje">Mensaje:</label><br>
+
+                <textarea id="mensaje"
+                          name="mensaje"
+                          rows="5"
+                          cols="40"></textarea>
+
+                <br><br>
+
+                <input type="checkbox"
+                       id="terminos"
+                       name="terminos">
+
+                <label for="terminos">
+                    Acepto los términos y condiciones
+                </label>
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>© 2026 Cine Online - Actividad 4 (HTML) </p>
+
+    </footer>
+
+</body>
+
+</html>
