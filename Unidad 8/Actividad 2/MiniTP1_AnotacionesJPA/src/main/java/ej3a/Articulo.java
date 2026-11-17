@@ -1,0 +1,55 @@
+package ej3a;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Articulo {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String codigoInterno;
+
+    private String descripcionLarga;
+
+    private double precioVenta;
+
+    public Articulo() {
+    }
+
+    public Articulo(String codigoInterno, String descripcionLarga,
+                    double precioVenta) {
+        this.codigoInterno = codigoInterno;
+        this.descripcionLarga = descripcionLarga;
+        this.precioVenta = precioVenta;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getCodigoInterno() {
+        return codigoInterno;
+    }
+
+    public void setCodigoInterno(String codigoInterno) {
+        this.codigoInterno = codigoInterno;
+    }
+
+    public String getDescripcionLarga() {
+        return descripcionLarga;
+    }
+
+    public void setDescripcionLarga(String descripcionLarga) {
+        this.descripcionLarga = descripcionLarga;
+    }
+
+    public double getPrecioVenta() {
+        return precioVenta;
+    }
+
+    public void setPrecioVenta(double precioVenta) {
+        this.precioVenta = precioVenta;
+    }
+}
